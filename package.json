@@ -1,8 +1,8 @@
 {
     "name" : "com.yuzetoolkit.framework.loggersystem",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "displayName" : "YuzeLoggerSystem",
-    "description" : "一个状态机",
+    "description" : "一个日志系统",
     "unity": "2019.1",
     "author": {
         "name": "Yzue",

@@ -1,45 +1,87 @@
-﻿namespace YuzeToolkit.Framework.LoggerSystem
+﻿using UnityEngine;
+
+namespace YuzeToolkit.Framework.LoggerSystem
 {
     public static class LoggerSystem
     {
-        public static void Log(string massage)
+        public static void Log(string message)
         {
-            UnityEngine.Debug.Log(massage);
+            Debug.Log(message);
         }
 
-        public static void Log(string massage, string[] tags)
+        public static void Log(string message, string[] tags)
         {
-            UnityEngine.Debug.Log(massage);
+            Debug.Log(message);
         }
 
-        public static void Warning(string massage)
+        public static void Log(string message, string savePath)
         {
-            UnityEngine.Debug.LogWarning(massage);
+            Debug.Log(message);
         }
 
-        public static void Warning(string massage, string[] tags)
+        public static void Log(string message, string[] tags, string savePath)
         {
-            UnityEngine.Debug.LogWarning(massage);
+            Debug.Log(message);
         }
 
-        public static void Error(string massage)
+        public static void Warning(string message)
         {
-            UnityEngine.Debug.LogError(massage);
+            Debug.LogWarning(message);
         }
 
-        public static void Error(string massage, string[] tags)
+        public static void Warning(string message, string[] tags)
         {
-            UnityEngine.Debug.LogError(massage);
+            Debug.LogWarning(message);
+        }
+
+        public static void Warning(string message, string savePath)
+        {
+            Debug.LogWarning(message);
+        }
+
+        public static void Warning(string message, string[] tags, string savePath)
+        {
+            Debug.LogWarning(message);
+        }
+
+        public static void Error(string message)
+        {
+            Debug.LogError(message);
+        }
+
+        public static void Error(string message, string[] tags)
+        {
+            Debug.LogError(message);
+        }
+
+        public static void Error(string message, string savePath)
+        {
+            Debug.LogError(message);
+        }
+
+        public static void Error(string message, string[] tags, string savePath)
+        {
+            Debug.LogError(message);
         }
 
         public static void Exception(System.Exception exception)
         {
-            UnityEngine.Debug.LogException(exception);
+            Debug.LogException(exception);
         }
 
         public static void Exception(System.Exception exception, string[] tags)
         {
-            UnityEngine.Debug.LogException(exception);
+            Debug.LogException(exception);
+        }
+
+        public static void Exception(System.Exception exception, string savePath)
+        {
+            Debug.LogException(exception);
+        }
+
+        public static void Exception(System.Exception exception, string[] tags, string savePath)
+        {
+            Debug.LogException(exception);
         }
     }
 }
