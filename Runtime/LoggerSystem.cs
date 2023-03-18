@@ -31,5 +31,15 @@
         {
             UnityEngine.Debug.LogError(massage);
         }
+
+        public static void Exception(System.Exception exception)
+        {
+            UnityEngine.Debug.LogException(exception);
+        }
+
+        public static void Exception(System.Exception exception, string[] tags)
+        {
+            UnityEngine.Debug.LogException(exception);
+        }
     }
 }
